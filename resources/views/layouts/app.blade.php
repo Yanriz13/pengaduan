@@ -144,6 +144,8 @@
                                         {{ $countStnkBelum ?? 0 }}
                                     </span>
                                 </a>
+
+                                {{-- Menu Pengaduan Kecelakaan (Admin) - Dikomentari / Dinonaktifkan
                                 <a href="{{ route('admin.kecelakaan.index') }}"
                                     class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl font-semibold text-xs tracking-wide transition duration-150 {{ request()->routeIs('admin.kecelakaan.*') ? 'bg-gradient-to-r from-[#2c170e] to-[#4a2c1d] text-white shadow-sm shadow-[#2c170e]/20' : 'text-stone-600 hover:bg-stone-100 hover:text-stone-900' }}">
                                     <svg class="w-4 h-4 opacity-80 text-rose-500" fill="none" viewBox="0 0 24 24"
@@ -157,6 +159,7 @@
                                         {{ $countKecelakaanBelum ?? 0 }}
                                     </span>
                                 </a>
+                                --}}
                             @else
                                 {{-- User Menu --}}
                                 <a href="{{ route('user.dashboard') }}"
@@ -175,6 +178,8 @@
                                     </svg>
                                     <span>Pengaduan STNK</span>
                                 </a>
+
+                                {{-- Menu Lapor Kecelakaan (User) - Dikomentari / Dinonaktifkan
                                 <a href="{{ route('user.kecelakaan.index') }}"
                                     class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl font-semibold text-xs tracking-wide transition duration-150 {{ request()->routeIs('user.kecelakaan.*') ? 'bg-brand-600 text-white shadow-sm shadow-brand-600/20' : 'text-slate-600 hover:bg-slate-100 hover:text-slate-900' }}">
                                     <svg class="w-4 h-4 opacity-80 text-rose-500" fill="none" viewBox="0 0 24 24"
@@ -184,6 +189,7 @@
                                     </svg>
                                     <span>Lapor Kecelakaan</span>
                                 </a>
+                                --}}
                             @endif
                         </nav>
                     </div>
